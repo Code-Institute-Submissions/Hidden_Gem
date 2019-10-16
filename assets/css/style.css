@@ -73,5 +73,74 @@ h1 {
 
 }
 
+/*------------ABOUT US----------*/
+
+
+
+
+
+
+h2 {
+font-size: 4em;
+font-weight: 200;
+    margin-left: 15px;
+
+    margin-top:10px;
+    padding:2rem 1rem;
+
+    letter-spacing: 6px;
+
+    text-transform: uppercase;
+    color:#ffffff;
+
+}
+
+
+
+ .about-p {
+
+    font-size:0.75em;
+    font-weight: 300;
+    color:#ffffff;
+    margin-left:15px;
+    margin-right: 25px;
+   
+    margin-top: 0px;
+ }
+ @media screen and (min-width:768px) {
+     .about-p {
+         font-size:1em;
+     }
+ }
+
+  
+
+
+#about-user {
+
+  background-attachment: fixed;
+
+    background-image: url('../images/woburn.jpg');
+
+    background-position: bottom;
+
+    background-size: cover;
+
+    height: 100vh;
+
+    width: 100vw;
+
+    margin-bottom: 0px;
+
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
 
 
