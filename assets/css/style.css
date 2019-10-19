@@ -310,57 +310,74 @@ h2 {
     .section-paragraph {
         font-size:1em;
     }
-.image {
+#plot {
     float:right;
   width:100px;
   height:100px;
   transition-property:width;
+  transition-property:height;
   transition-duration:2s;
 }
 .image:hover{
-    width:200px;
+    width:400px;
+    height:400px;
 }
+#county {
+    float:right;
+    padding:0;
+    margin-bottom:0;
+   
 }
+#map {
+    float:right;
+    padding:0;
+}
+
+
 
 h3 {
     color:#ffffff;
     margin-left:15px;
+    float:right;
 }
 
 .paside {
     color: #ffffff;
-    margin-right:15px;
+    margin-right:5px;
+    padding:0;
 }
 .col-md-4 {
     text-align:center;
 }
-.article,.aside {
+.article .aside {
     position: relative;
     top:50%;
-    transform: translateY(-50%);
+    transform:translateY(-50%);
+   
 }
 
 #contact {
 
     background-attachment: fixed;
 
-    background-image: url('../images/tulips.jpg');
+    background-image: url('../images/chinese.jpg');
 
-    background-position: left;
+    background-position: bottom;
 
     background-size: cover;
 
    height: 100vh;
    width: 100vh;
-   margin: bottom;
+   margin-bottom:0px;
    z-index: 1;
 
 }
 
 #alert {
-    background-color:yellow;
+    
     margin-top:70%;
-    font-size: 1em;
+    font-size: 1.5em;
+    color:yellow;
   
 }
 
@@ -407,6 +424,13 @@ h3 {
 }
 .alert {
     color:yellow;
+}
+#high {
+    background-color:#00FF00;
+}
+.hmain {
+    font-size:2em;
+    color:#ffffff;
 }
     
   
