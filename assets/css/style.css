@@ -14,7 +14,7 @@
 
     background-attachment: fixed;
 
-    background-image: url('../images/urn.jpg');
+    background-image: url('../images/Wrest_Park_Bedfordshire.jpg');
 
     background-position: bottom;
 
@@ -26,7 +26,7 @@
 
     margin-bottom: 0px;
 
-    z-index: 1;
+  
 
 }
 
@@ -53,7 +53,7 @@ h1 {
 }
 
 .jumbotron {
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.4);
     margin-left: 70px;
     margin-top: 70px;
     
@@ -79,6 +79,12 @@ h1 {
     .main {
         font-size:2.5em;
         
+    }
+}
+@media screen and (max-width:360px) {
+    .jumbotron {
+        margin-right: 15px;
+        margin-left: 15px;
     }
 }
 
@@ -108,11 +114,12 @@ font-weight: 200;
 
  .about-p {
 
-    font-size:0.75em;
+    font-size:0.50em;
     font-weight: 300;
     color:#ffffff;
     margin-left:15px;
     margin-right: 25px;
+   
    
     margin-top: 0px;
  }
@@ -127,7 +134,7 @@ font-weight: 200;
     }
     h2 {
         font-size:5.5em;
-        color:#000000;
+        color:#ffffff;
         font-weight:300;
     }
 }
@@ -149,8 +156,9 @@ font-weight: 200;
     width: 100vw;
 
     margin-bottom: 0px;
+    margin-top: 0px;
 
-    z-index: 1;
+   
 }
 
 
@@ -160,21 +168,20 @@ font-weight: 200;
 
     background-image: url('../images/fun ashridge.jpg');
 
-    background-position: center;
+    background-position: bottom;
 
     background-size: cover;
 
     width: 100vw;
-
-    padding-bottom: 50px;
-
+    height:100vw;
+    margin-left: 0px;
+    margin-top: 0px;
+ 
     background-repeat: no-repeat;
 
-    position: relative;
 
-    font-weight: 300;
-
-    margin-bottom: 0px;
+   margin-bottom: 0px;
+   z-index: 1;
 
 }
 
@@ -313,7 +320,9 @@ h2 {
     font-size:4em;
 }
 
-
+.article-jumbotron {
+    background-color: rgba(0,0,0,0.4);
+}
    
   
 
@@ -350,29 +359,40 @@ h3 {
     float:right;
     
 }
-
+.two {
+    float: right;
+    
+}
  #findus{
     float:left;
     
 }
 #four {
     float:right;
-    margin-right: 0px;
+    margin-left: 750px;
+    margin-top:-255px;
+}
+.images {
+    float:right;
+  
+   
+   
+    margin-top: -40px;
 }
 #plot {
-    float:right;
+    margin-left:750px; 
 }
+
+
 
 
 .paside {
     color: #ffffff;
    
 }
-.col-md-4 {
-    text-align:center;
-}
 
-#us {
+
+.form {
 
     background-attachment: fixed;
 
@@ -382,12 +402,15 @@ h3 {
 
     background-size: cover;
 
-   height: 100vh;
-   width: 100vh;
+   height: 200vh;
+   width: 200vh;
    margin-bottom:0px;
    z-index: 1;
 
 }
+
+    
+
 
 
 #alert {
@@ -400,12 +423,12 @@ h3 {
 
 
 
-.contact-form {
+#contact-form {
 
     position: relative;
 
     top: 3%;
-    left:100px;
+   margin-left:500px;
 
 }
 
@@ -413,8 +436,16 @@ h3 {
     
 
 .input {
-    width:60%;
+    width:200px;
 }
+.row contact {
+    width:500px;
+    
+}
+.form-group{
+    width:450px;
+}
+
 
 
 
@@ -508,6 +539,9 @@ h3 {
       width:100%;
     }
     
+}
+.jumbotron-container {
+    background-color: rgba(0,0,0,0.5);
 }
 
 
