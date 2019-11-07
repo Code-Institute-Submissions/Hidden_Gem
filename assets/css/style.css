@@ -109,6 +109,13 @@ font-weight: 200;
     color:#ffffff;
 
 }
+.jumbotron-about {
+    background-color:rgba(0,0,0,0.4);
+    margin-left: 70px;
+    margin-top: 0px;
+    
+    
+}
 
 
 
@@ -180,7 +187,7 @@ font-weight: 200;
     background-repeat: no-repeat;
 
 
-   margin-bottom: 0px;
+  
    z-index: 1;
 
 }
@@ -311,17 +318,21 @@ font-weight: 200;
     width: 100vw;
 
     margin-bottom: 0px;
+    margin-top: 0px;
 
-    z-index: 1;
+   
 
 }
 
+
 h2 {
-    font-size:4em;
+    font-size:5.5em;
 }
 
 .article-jumbotron {
     background-color: rgba(0,0,0,0.4);
+    margin-top:0px;
+    
 }
    
   
@@ -372,24 +383,29 @@ h3 {
     margin-left: 750px;
     margin-top:-255px;
 }
+#plot {
+    float:right;
+    margin-left: 850px;
+}
 .images {
     float:right;
   
    
    
     margin-top: -40px;
-}
-#plot {
-    margin-left:750px; 
+
+
+    
 }
 
 
 
 
 .paside {
-    color: #ffffff;
+    color:#ffffff;
    
 }
+
 
 
 .form {
@@ -405,7 +421,8 @@ h3 {
    height: 200vh;
    width: 200vh;
    margin-bottom:0px;
-   z-index: 1;
+   z-index:1;
+ 
 
 }
 
@@ -413,11 +430,12 @@ h3 {
 
 
 
-#alert {
+.alert {
     
 
     font-size: 1.5em;
-    color:yellow;
+    color:#000000;
+    background-color: yellow;
   
 }
 
@@ -427,7 +445,7 @@ h3 {
 
     position: relative;
 
-    top: 3%;
+    top: 5%;
    margin-left:500px;
 
 }
@@ -436,14 +454,14 @@ h3 {
     
 
 .input {
-    width:200px;
+    width:300px;
 }
 .row contact {
     width:500px;
     
 }
 .form-group{
-    width:450px;
+    width:400px;
 }
 
 
@@ -463,20 +481,13 @@ h3 {
       font-weight: 300;
     }
 }
-       
+
 
         
      
     
 
 
-.alert {
-    color:#000000;
-    background-color:yellow;
-}
-#us {
-    background-color:#f3e5c6;
-}
 
 
 
@@ -540,8 +551,8 @@ h3 {
     }
     
 }
-.jumbotron-container {
-    background-color: rgba(0,0,0,0.5);
+.jumbotron-lights {
+    background-color: rgba(0,0,0,0.4);
 }
 
 
