@@ -1,75 +1,48 @@
 .body {
-
-    background-color: #fdfdfd;
-
+background-color: #fdfdfd;
     font-family: 'Nobile'100,200,300,400, sans-serif;
     position:relative;
 }
 
 /*----------JUMBOTRON----------*/
-
-
-
 #landing-view {
-
-    background-attachment: fixed;
-
-    background-image: url('../images/Wrest_Park_Bedfordshire.jpg');
-
+     background-attachment: fixed;
+    background-image: url('../images/dayout.jpg');
     background-position: bottom;
-
     background-size: cover;
-
     height: 100vh;
-
     width: 100vw;
-
     margin-bottom: 0px;
-
-  
-
 }
-
-
-
+@media screen and (max-width:768px){
+#landing-view {
+    background-image: url('../images/dayout.jpg');
+    }
+}
 #top {
     padding:2rem 1rem;
-    
-}
-
-
-
+    }
 h1 {
-
     padding-top: 90px;
-  
-
-
-    font-size:4.5em;
-    color:#ffffff;
+      font-size:4.5em;
+      color:#ffffff;
     transition:2s ease-in-out;
-   
-
-}
-
+   }
 .jumbotron {
-    background-color:rgba(0,0,0,0.4);
+    background-color:rgba(0,0,0,0.3);
     margin-left: 70px;
     margin-top: 70px;
-    
-}   
-
-
-
-
+    }
+@media screen and (max-width:360px){
+    .jumbotron {
+        margin-top:-150px;
+        padding-top: 10px;
+    }
+}
 .main {
-
     font-size:3.5em;
     color:#ffffff;
-    
-
-    transition:2s ease-in-out;
-
+transition:2s ease-in-out;
 }
 @media screen and (max-width:578px){
     h1 {
@@ -78,56 +51,45 @@ h1 {
     }
     .main {
         font-size:2.5em;
-        
+        }
     }
-}
 @media screen and (max-width:360px) {
     .jumbotron {
-        margin-right: 15px;
-        margin-left: 15px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top:80%;
+    }
+    h1 {
+        font-size:2em;
+    }
+    .main {
+        font-size:1.5em;
     }
 }
 
 /*------------ABOUT US----------*/
 
-
-
-
-
-
 h2 {
-font-size: 4em;
-font-weight: 200;
+    font-size: 4em;
+    font-weight: 200;
     margin-left: 15px;
-
-    margin-top:10px;
+     margin-top:10px;
     padding:2rem 1rem;
-
     letter-spacing: 6px;
-
     text-transform: uppercase;
     color:#ffffff;
-
 }
 .jumbotron-about {
     background-color:rgba(0,0,0,0.4);
     margin-left: 70px;
     margin-top: 0px;
-    
-    
-}
-
-
-
- .about-p {
-
+    }
+.about-p {
     font-size:0.50em;
     font-weight: 300;
     color:#ffffff;
     margin-left:15px;
     margin-right: 25px;
-   
-   
     margin-top: 0px;
  }
  @media screen and (min-width:768px) {
@@ -137,7 +99,9 @@ font-weight: 200;
  }
 @media screen and (max-width:600px) {
     .about-p {
-        font-size:1em;
+        font-size:0.75em;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     h2 {
         font-size:5.5em;
@@ -145,205 +109,113 @@ font-weight: 200;
         font-weight:300;
     }
 }
-  
-
-
-#about-user {
-
-  background-attachment: fixed;
-
+@media screen and (max-width:578px) {
+    .jumbotron-about {
+         margin-right: 0px;
+         margin-left: 0px;
+   }
+}
+  #about-user {
+    background-attachment: fixed;
     background-image: url('../images/woburn.jpg');
-
     background-position: bottom;
-
     background-size: cover;
-
     height: 100vh;
-
     width: 100vw;
-
     margin-bottom: 0px;
     margin-top: 0px;
-
-   
 }
-
-
 #event{
-
     background-attachment: fixed;
-
-    background-image: url('../images/fun ashridge.jpg');
-
+     background-image: url('../images/fun ashridge.jpg');
     background-position: bottom;
-
     background-size: cover;
-
-    width: 100vw;
     height:100vw;
     margin-left: 0px;
     margin-top: 0px;
- 
-    background-repeat: no-repeat;
-
-
-  
-   z-index: 1;
-
+     background-repeat: no-repeat;
+     z-index: 1;
 }
-
-
-
 .card-body .row {
-
     text-align: center;
-
     padding-top: 10px;
-
 }
-
-
-
 .project-cards {
-
     display: inline-table;
-
     justify-content: center;
-
     align-items: center;
-
-
-
 }
-
-
-
 .col-xs-6 {
-
     align-items: center;
-
 }
-
-
-
 .card {
-
-    background-color: #fdfdfd;
-
-    border-radius: 2.5%;
-
-    width: 18em;
-
+     background-color: #fdfdfd;
+     border-radius: 2.5%;
+     width: 18em;
     height: 18em;
-
     top: 50%;
-
     left: 0;
-
     margin: 15% auto;
-
     padding: 15px;
-
     align-items: center;
-
     z-index: 2;
-
     display: block;
-
     opacity: 0.8;
-
     transition: all .3s ease-in;
-
     -moz-transition: all .3s ease-in;
-
     -webkit-transition: all .3s ease-in;
-
 }
-
 .card:hover {
     opacity:1;
-    
-}
-
-
+    }
 .card-text {
     color:blue;
 }
-  
-
-
-
-
-
-.card-title {
-
+  .card-title {
     font-size: 1.25em;
-
     font-weight: bold;
-
 }
-
-
-
 .card-subtitle {
-
     font-size: 1.1em;
-
     font-weight: bold;
-
 }
-
-
-
 .card-body .card-text {
-
-    font-size: 1em;
-    color:#000000;
-
+     font-size: 1em;
+    color:#000000
 }
-
+@media (max-width:578px){
+    .card {
+      width:12em;
+      height:6em;
+      margin-top: 0px;
+    display:inline-table;
+      overflow:scroll;
+        }
+}
 
 #find {
-
-    background-attachment: fixed;
-
+     background-attachment: fixed;
     background-image: url('../images/bridge.jpg');
-
     background-position: bottom;
-
     background-size: cover;
-
     height: 100vh;
-
     width: 100vw;
-
-    margin-bottom: 0px;
+     margin-bottom: 0px;
     margin-top: 0px;
-
-   
-
 }
-
-
 h2 {
     font-size:5.5em;
 }
-
 .article-jumbotron {
     background-color: rgba(0,0,0,0.4);
     margin-top:0px;
-    
-}
-   
-  
-
-.section-paragraph {
-    color:#ffffff;
-   
-    font-size:1.5em;
-    margin-left: 15px;
-    margin-top:3px;
-    margin-right: 25px;
+    }
+   .section-paragraph {
+        color:#ffffff;
+        font-size:1.5em;
+        margin-left: 15px;
+        margin-top:3px;
+        margin-right: 25px;
 }
 @media screen and (max-width:600px) {
     .section-paragraph {
@@ -351,33 +223,26 @@ h2 {
     }
 }
 .images {
-    
-  width:100px;
-  height:100px;
-  transition-property:width;
-  transition-property:height;
-  transition-duration:2s;
+    width:100px;
+    height:100px;
+    transition-property:width;
+    transition-property:height;
+    transition-duration:2s;
 }
 .images:hover{
     width:200px;
     height:200px;
 }
-
-
-
 h3 {
     color:#ffffff;
     float:right;
-    
-}
+    }
 .two {
     float: right;
-    
-}
+    }
  #findus{
     float:left;
-    
-}
+    }
 #four {
     float:right;
     margin-left: 750px;
@@ -389,122 +254,76 @@ h3 {
 }
 .images {
     float:right;
-  
-   
-   
     margin-top: -40px;
-
-
-    
 }
-
-
-
-
 .paside {
     color:#ffffff;
-   
-}
-
-
-
+   }
 .form {
-
     background-attachment: fixed;
-
     background-image: url('../images/tulips.jpg');
-
     background-position: bottom;
-
     background-size: cover;
-
-   height: 200vh;
-   width: 200vh;
-   margin-bottom:0px;
-   z-index:1;
- 
-
-}
-
-    
-
-
-
+    height: 200vh;
+    width: 200vh;
+    margin-bottom:0px;
+     z-index:1;
+ }
 .alert {
-    
-
     font-size: 1.5em;
     color:#000000;
     background-color: yellow;
-  
+  }
+@media  (max-width:578px) {
+    .alert {
+        height: 4em;
+        font-size:0.5em;
+        font-weight: 200;
+    }
 }
-
-
-
 #contact-form {
-
     position: relative;
-
     top: 5%;
-   margin-left:500px;
-
+    margin-left:500px;
 }
-
-
-    
-
 .input {
     width:300px;
 }
 .row contact {
-    width:500px;
-    
-}
+    width:400px;
+    }
 .form-group{
     width:400px;
 }
-
-
-
-
-
+.btn btn-default {
+    width:200px;
+}
 #contact-head {
-
     margin: 15px -11px 45px 0px;
     font-size:4em;
-  color:#000000;
-
+    color:#000000;
 }
 @media screen and (max-width:578px) {
     #contact-head {
       font-size: 1.5em;
       font-weight: 300;
     }
+    #contact-form{
+        margin-left: 0px;
+    }
 }
-
-
-        
-     
-    
-
-
-
-
-
 #highlights {
     background-color: #00FF00;
 }
-
 @media screen and (max-width:578px) {
     h2 {
         font-size:1.25em;
-        margin-left:0;
-        
-    }
+        margin-left:0px;
+        }
 }
  .icons {
     display:inline-block;
-    padding: 40px;
+    padding: 100px;
     box-shadow:0px 0px 2px #888;
     background-color:#AFEEEE;
     text-align:center;
@@ -512,24 +331,26 @@ h3 {
 #timetable {
     background-color:#00FF00;
 }
-
 .image {
     background:url("../images/snowman.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  min-height:360px;
+    min-height:360px;
     margin-right: auto;
-   
     transition:.5s ease-in-out;
 }
 .season {
     text-align: right;
     margin-top: 0px;
-    margin-right: 0px;
+    margin-left: 0px;
     font-size: 4.5em;
     color:#ff2400;
-    
+    }
+@media  (max-width:578px) {
+    .season {
+        margin-left: 0px;
+      }
 }
 .lights {
     text-align:center;
@@ -549,10 +370,17 @@ h3 {
     .image {
       width:100%;
     }
-    
-}
 .jumbotron-lights {
+  background-color: rgba(0,0,0,0.4);
+} 
+.container jumbotron {
     background-color: rgba(0,0,0,0.4);
+}
+.five {
+    color:#000000;
+}
+h5 {
+    color: #000000;
 }
 
 
