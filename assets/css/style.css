@@ -16,7 +16,8 @@ background-color: #fdfdfd;
 }
 @media screen and (max-width:768px){
 #landing-view {
-    background-image: url('../images/dayout.jpg');
+    background-image: url('../images/gar.png');
+    background-position:35% 45% ;
     }
 }
 #top {
@@ -70,17 +71,17 @@ transition:2s ease-in-out;
 /*------------ABOUT US----------*/
 
 h2 {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 200;
     margin-left: 15px;
-     margin-top:10px;
+     margin-top:50px;
     padding:2rem 1rem;
     letter-spacing: 6px;
     text-transform: uppercase;
     color:#ffffff;
 }
 .jumbotron-about {
-    background-color:rgba(0,0,0,0.4);
+    background-color:rgba(0,0,0,0.3);
     margin-left: 70px;
     margin-top: 0px;
     }
@@ -90,11 +91,14 @@ h2 {
     color:#ffffff;
     margin-left:15px;
     margin-right: 25px;
-    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-top: 30px; 
  }
  @media screen and (min-width:768px) {
      .about-p {
          font-size:1.5em;
+         margin-left: 0px;
+         text-align: justify;
      }
  }
 @media screen and (max-width:600px) {
@@ -109,12 +113,13 @@ h2 {
         font-weight:300;
     }
 }
-@media screen and (max-width:578px) {
+@media screen and (max-width:1024px) {
     .jumbotron-about {
          margin-right: 0px;
          margin-left: 0px;
+         height:100vh;
    }
-}
+   }
   #about-user {
     background-attachment: fixed;
     background-image: url('../images/woburn.jpg');
@@ -130,7 +135,7 @@ h2 {
      background-image: url('../images/fun ashridge.jpg');
     background-position: bottom;
     background-size: cover;
-    height:100vw;
+    height:65vw;
     margin-left: 0px;
     margin-top: 0px;
      background-repeat: no-repeat;
@@ -165,6 +170,7 @@ h2 {
     -moz-transition: all .3s ease-in;
     -webkit-transition: all .3s ease-in;
 }
+
 .card:hover {
     opacity:1;
     }
@@ -192,79 +198,12 @@ h2 {
       overflow:scroll;
         }
 }
-
-#find {
-     background-attachment: fixed;
-    background-image: url('../images/bridge.jpg');
-    background-position: bottom;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-     margin-bottom: 0px;
-    margin-top: 0px;
-}
-h2 {
-    font-size:5.5em;
-}
-.article-jumbotron {
-    background-color: rgba(0,0,0,0.4);
-    margin-top:0px;
-    }
-   .section-paragraph {
-        color:#ffffff;
-        font-size:1.5em;
-        margin-left: 15px;
-        margin-top:3px;
-        margin-right: 25px;
-}
-@media screen and (max-width:600px) {
-    .section-paragraph {
-        font-size:1em;
-    }
-}
-.images {
-    width:100px;
-    height:100px;
-    transition-property:width;
-    transition-property:height;
-    transition-duration:2s;
-}
-.images:hover{
-    width:200px;
-    height:200px;
-}
-h3 {
-    color:#ffffff;
-    float:right;
-    }
-.two {
-    float: right;
-    }
- #findus{
-    float:left;
-    }
-#four {
-    float:right;
-    margin-left: 750px;
-    margin-top:-255px;
-}
-#plot {
-    float:right;
-    margin-left: 850px;
-}
-.images {
-    float:right;
-    margin-top: -40px;
-}
-.paside {
-    color:#ffffff;
-   }
-.form {
+ .form {
     background-attachment: fixed;
-    background-image: url('../images/tulips.jpg');
+    background-image: url('../images/urn.jpg');
     background-position: bottom;
     background-size: cover;
-    height: 200vh;
+    height: 120vh;
     width: 200vh;
     margin-bottom:0px;
      z-index:1;
@@ -273,6 +212,7 @@ h3 {
     font-size: 1.5em;
     color:#000000;
     background-color: yellow;
+    margin-top: 0px;
   }
 @media  (max-width:578px) {
     .alert {
@@ -299,9 +239,10 @@ h3 {
     width:200px;
 }
 #contact-head {
-    margin: 15px -11px 45px 0px;
-    font-size:4em;
-    color:#000000;
+    margin-top: 30px;
+    margin-left: 200px;
+    font-size:5em;
+    color:#ffffff;
 }
 @media screen and (max-width:578px) {
     #contact-head {
@@ -323,13 +264,17 @@ h3 {
 }
  .icons {
     display:inline-block;
-    padding: 100px;
-    box-shadow:0px 0px 2px #888;
+    padding: 40px;
+    box-shadow:0px 2px #00008b;
     background-color:#AFEEEE;
     text-align:center;
+    letter-spacing: 50px;
 }
-#timetable {
-    background-color:#00FF00;
+.icons:hover {
+    color:#00008b;
+}
+#highlights {
+    background-color:#A5F2F3;
 }
 .image {
     background:url("../images/snowman.jpg");
@@ -373,9 +318,6 @@ h3 {
 .jumbotron-lights {
   background-color: rgba(0,0,0,0.4);
 } 
-.container jumbotron {
-    background-color: rgba(0,0,0,0.4);
-}
 .five {
     color:#000000;
 }
