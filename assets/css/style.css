@@ -76,9 +76,12 @@ h2 {
 }
 .jumbotron-about {
     background-color:rgba(0,0,0,0.3);
-    margin-left: 70px;
+   padding-bottom: 30px;
     margin-top: 0px;
     }
+.about-title {
+    padding: 20px 0 0 20px;
+}
 .about-p {
     font-size:1.5em;
     font-weight: 300;
@@ -129,61 +132,47 @@ h2 {
    }
    }
   #about-user {
-    background-attachment: fixed;
-    background-image: url('../images/spooky.jpg');
-    background-position: bottom;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-@media screen and (max-width:768px){
-    #about-user {
-        background-size: contain;
-        background-image: url('../images/spooky.jpg');
-    }
-    .about-p {
+      background-attachment: fixed;
+      background-image: url('../images/spooky.jpg');
+      background-position: bottom;
+      background-size: cover;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      padding: 40px;
+  }
+
+  @media screen and (max-width:768px) {
+      #about-user {
+          background-size: contain;
+          background-image: url('../images/spooky.jpg');
+      } .about-p {
         margin-top: 0px;
         font-size:1.25em; 
     }
 }
-#event{
+.event-section {
     background-attachment: fixed;
      background-image: url('../images/fun ashridge.jpg');
     background-position: bottom;
     background-size: cover;
-    height:65vw;
-    margin-left: 0px;
-    margin-top: 0px;
-     background-repeat: no-repeat;
-     z-index: 1;
+    margin: 0px;
+    background-repeat: no-repeat;
 }
 .card-body .row {
     text-align: center;
     padding-top: 10px;
-}
-.project-cards {
-    display: inline-table;
-    justify-content: center;
-    align-items: center;
 }
 .col-xs-6 {
     align-items: center;
 }
 .card {
      background-color: #fdfdfd;
-     border-radius: 2.5%;
-     width: 18em;
-    height: 18em;
-    top: 50%;
-    left: 0;
-    margin: 15% auto;
+     border-radius: 15px;
+     margin: 20px auto;
     padding: 15px;
     align-items: center;
     z-index: 2;
-    display: block;
-    opacity: 0.8;
+   opacity: 0.8;
     transition: all .3s ease-in;
     -moz-transition: all .3s ease-in;
     -webkit-transition: all .3s ease-in;
@@ -216,22 +205,16 @@ h2 {
       overflow:scroll;
         }
 }
-.form {
-    background-attachment: fixed;
+.form-section {
     background-image: url('../images/urn.jpg');
-    background-position: bottom;
     background-size: cover;
-    height: 120vh;
-    width: 200vh;
-    margin-bottom:0px;
-     z-index:1;
- }
-.alert {
-    font-size: 1.5em;
-    color:#000000;
-    background-color: yellow;
-    margin-top: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color:#ffffff;
+    overlay:0,0,0,0.3;
   }
+ 
+
 @media  (max-width:578px) {
     .alert {
         height: 4em;
@@ -251,10 +234,13 @@ h2 {
     width:400px;
     }
 .form-group{
-    width:400px;
+    width:450px;
 }
 .btn btn-default {
     width:200px;
+}
+#contactus {
+    color: #ffffff;
 }
 #contact-head {
     margin-top: 30px;
@@ -279,9 +265,13 @@ h2 {
         width: 150px;
     }
     .form-group {
-        width: 250px;
+        width: 300px;
         margin-left:25px;
         margin-top: 0px;
+    }
+    .form {
+        background-image: url('../images/canal.jpg');
+        background-size: contain;
     }
 }
 #highlights {
