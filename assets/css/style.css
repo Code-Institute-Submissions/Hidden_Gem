@@ -14,11 +14,11 @@ background-color: #fdfdfd;
     width: 100vw;
     margin-bottom: 0px;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:1024px){
 #landing-view {
     background-image: url('../images/gar.png');
-    background-position:35% 45% ;
-    }
+    background-size:contain ;
+   }
 }
 #top {
     padding:2rem 1rem;
@@ -34,12 +34,6 @@ h1 {
     margin-left: 70px;
     margin-top: 70px;
     }
-@media screen and (max-width:360px){
-    .jumbotron {
-        margin-top:-150px;
-        padding-top: 10px;
-    }
-}
 .main {
     font-size:3.5em;
     color:#ffffff;
@@ -71,7 +65,7 @@ transition:2s ease-in-out;
 /*------------ABOUT US----------*/
 
 h2 {
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: 200;
     margin-left: 15px;
      margin-top:50px;
@@ -86,7 +80,7 @@ h2 {
     margin-top: 0px;
     }
 .about-p {
-    font-size:0.50em;
+    font-size:1.5em;
     font-weight: 300;
     color:#ffffff;
     margin-left:15px;
@@ -94,41 +88,65 @@ h2 {
     margin-bottom: 15px;
     margin-top: 30px; 
  }
- @media screen and (min-width:768px) {
-     .about-p {
-         font-size:1.5em;
-         margin-left: 0px;
-         text-align: justify;
-     }
- }
-@media screen and (max-width:600px) {
+ @media screen and (max-width:360px) {
     .about-p {
-        font-size:0.75em;
+        font-size:0.55em;
         padding-left: 0px;
         padding-right: 0px;
+        margin-top: 0px;
+        text-align: left;
     }
-    h2 {
-        font-size:5.5em;
+ h2 {
+        font-size:4.5em;
         color:#ffffff;
         font-weight:300;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+    .jumbotron-about {
+        background-color: rgba(0,0,0,0.3);
+        margin-left: 0px;
+        margin-right: 20px;
     }
 }
-@media screen and (max-width:1024px) {
+@media screen and (min-width:1024px) {
     .jumbotron-about {
          margin-right: 0px;
          margin-left: 0px;
          height:100vh;
    }
+   #about-user {
+       background-size: contain;
+       background-image: url('../images/spooky.jpg');
+   }
+   h2 {
+       margin-left: 60px;
+       margin-top: 70px;
+   }
+   .about-p {
+       font-size:1.5em;
+       margin-left: 65px;
+   }
    }
   #about-user {
     background-attachment: fixed;
-    background-image: url('../images/woburn.jpg');
+    background-image: url('../images/spooky.jpg');
     background-position: bottom;
     background-size: cover;
     height: 100vh;
     width: 100vw;
     margin-bottom: 0px;
     margin-top: 0px;
+}
+@media screen and (max-width:768px){
+    #about-user {
+        background-size: contain;
+        background-image: url('../images/spooky.jpg');
+    }
+    .about-p {
+        margin-top: 0px;
+        font-size:1.25em; 
+    }
 }
 #event{
     background-attachment: fixed;
@@ -198,7 +216,7 @@ h2 {
       overflow:scroll;
         }
 }
- .form {
+.form {
     background-attachment: fixed;
     background-image: url('../images/urn.jpg');
     background-position: bottom;
@@ -246,11 +264,24 @@ h2 {
 }
 @media screen and (max-width:578px) {
     #contact-head {
-      font-size: 1.5em;
+      font-size: 2.5em;
       font-weight: 300;
+      text-align:left;
+      margin-left: 0px;
     }
     #contact-form{
         margin-left: 0px;
+    }
+    .input {
+        width:150px;
+    }
+    .row contact{
+        width: 150px;
+    }
+    .form-group {
+        width: 250px;
+        margin-left:25px;
+        margin-top: 0px;
     }
 }
 #highlights {
@@ -273,8 +304,11 @@ h2 {
 .icons:hover {
     color:#00008b;
 }
-#highlights {
-    background-color:#A5F2F3;
+.autumn {
+    background-color:#fdfdfd;
+}
+.col-heading{
+    background-color: #A5F2F3;
 }
 .image {
     background:url("../images/snowman.jpg");
@@ -297,10 +331,11 @@ h2 {
         margin-left: 0px;
       }
 }
-.lights {
+.description {
     text-align:center;
     margin-right: 0px;
     font-size: 2.5em;
+    color:#ff2400;
 }
 @media screen and (max-width:578px) {
     .season {
